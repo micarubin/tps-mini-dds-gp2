@@ -16,6 +16,12 @@
 *.idea/**/usage.statistics.xml
 *.idea/**/dictionaries
 *.idea/**/shelf
+*.idea/.gitignore
+*.idea/.name
+*.idea/compiler.xml
+*.idea/jarRepositories.xml
+*.idea/misc.xml
+*.idea/vcs.xml
 
 #default ignored files
 /shelf/
