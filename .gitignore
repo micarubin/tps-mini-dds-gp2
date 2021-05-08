@@ -10,6 +10,10 @@
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
+#file ~/.gitignore_global
+.DS_Store
+.idea
+
 #User-specific stuff
 *.idea/**/workspace.xml
 *.idea/**/tasks.xml
