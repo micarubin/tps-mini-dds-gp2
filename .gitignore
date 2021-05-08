@@ -10,22 +10,28 @@
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
+<<<<<<< Updated upstream
 #file ~/.gitignore_global
 .DS_Store
 .idea
 
+=======
+>>>>>>> Stashed changes
 #User-specific stuff
 *.idea/**/workspace.xml
 *.idea/**/tasks.xml
 *.idea/**/usage.statistics.xml
 *.idea/**/dictionaries
 *.idea/**/shelf
+<<<<<<< Updated upstream
 *.idea/.gitignore
 *.idea/.name
 *.idea/compiler.xml
 *.idea/jarRepositories.xml
 *.idea/misc.xml
 *.idea/vcs.xml
+=======
+>>>>>>> Stashed changes
 
 #default ignored files
 /shelf/
