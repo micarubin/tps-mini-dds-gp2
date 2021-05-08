@@ -10,6 +10,24 @@
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
+#User-specific stuff
+*.idea/**/workspace.xml
+*.idea/**/tasks.xml
+*.idea/**/usage.statistics.xml
+*.idea/**/dictionaries
+*.idea/**/shelf
+
+#default ignored files
+/shelf/
+/workspace.xml
+
+#datasource local storage ignored files
+/dataSources/
+/dataSources.local.xml
+
+#editor based http clinet requests
+/httpRequests/
+
 # Package Files #
 *.jar
 *.war
