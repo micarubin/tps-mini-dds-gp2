@@ -1,21 +1,29 @@
 package domain;
-
-import utils.Singleton;
-
-import java.util.ArrayList;
 import java.util.List;
 
 public class  Control {
     private  List<Cliente> clientes;
-    public Control() {
-        this.clientes =  new ArrayList<>();
+    private static Control instance;
+    public Control( List<Cliente> clientes) {
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException ex) {
+            ex.printStackTrace();
+        }
+        this.clientes =  clientes;
     }
 
-    public Control obtenerInstancia(Control control){
-        return (Control) Singleton.getInstance(control);
+    public static Control obtenerInstancia(List<Cliente> clientes){
+        if (instance == null) {
+            instance = new Control(clientes);
+        }
+        return instance;
     }
 
     public long chequearCuentas(Integer dni, Integer saldoTope){
+        if(clientes.isEmpty()){
+            return 0;
+        }
        Cliente clienteEspecificado = this.buscarCliente(dni);
        List<Integer> saldos = this.obtenerListaDeSaldos(clienteEspecificado);
        return saldos.stream().filter(saldo -> saldo > saldoTope).count();
