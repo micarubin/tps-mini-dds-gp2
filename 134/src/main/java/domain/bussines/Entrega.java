@@ -1,11 +1,11 @@
 package domain.bussines;
 
-import java.time.LocalDateTime;
+import java.util.Date;
 import java.util.List;
 
 public class Entrega {
-    private LocalDateTime fecha;
-    private Periodicidad periodo;
+    private Date fecha;
+    //private Periodicidad periodo;
     private List<Articulo> articulos;
 
     public void agregarArticulo(Articulo articulo){
@@ -13,6 +13,32 @@ public class Entrega {
     }
 
     public void envasar(){
-        System.out.println("El articulo fue evasado");
+
+    }
+
+    /* Getters and Setters*/
+
+    public Date getFecha() {
+        return fecha;
+    }
+
+    public void setFecha(Date fecha) {
+        this.fecha = fecha;
+    }
+
+    /*public Periodicidad getPeriodo() {
+        return periodo;
+    }
+
+    public void setPeriodo(Periodicidad periodo) {
+        this.periodo = periodo;
+    }*/
+
+    public List<Articulo> getArticulos() {
+        return articulos;
+    }
+
+    public void setArticulos(List<Articulo> articulos) {
+        this.articulos = articulos;
     }
 }
