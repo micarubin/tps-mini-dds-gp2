@@ -13,10 +13,10 @@ public class Planificador {
         return pedidos.size();
     }
 
-    /*public Pedido crearPedido(Cliente cliente, Periodicidad periodicidad){
-        Pedido nuevoPedido = new Pedido(this.cantidadPedidos(), cliente);
+    public Pedido crearPedido(Cliente cliente, Periodicidad periodicidad){
+        Pedido nuevoPedido = new Pedido(this.cantidadPedidos(), cliente, periodicidad);
         return nuevoPedido;
-    }*/
+    }
 
     /* Getters and Setters*/
 

@@ -5,6 +5,14 @@ public class Articulo {
     private Envase envase;
     private Integer cantidad;
 
+    /* Constructor */
+
+    public Articulo(Material material, Envase envase, Integer cantidad) {
+        this.material = material;
+        this.envase = envase;
+        this.cantidad = cantidad;
+    }
+
     /* Getters and Setters */
 
     public Material getMaterial() {

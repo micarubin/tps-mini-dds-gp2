@@ -13,7 +13,13 @@ public class Entrega {
     }
 
     public void envasar(){
+        //TODO envasar()
+    }
 
+    /* Constructor */
+
+    public Entrega(Date fecha) {
+        this.fecha = fecha;
     }
 
     /* Getters and Setters*/

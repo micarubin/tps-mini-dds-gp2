@@ -7,21 +7,23 @@ import java.util.List;
 public class Pedido {
     private Integer idPedido;
     private Cliente cliente;
-    private List<Entrega> entregas;
     private Periodicidad periodicidad;
+    private List<Entrega> entregas;
 
-    /*public Date calcularFechaEntrega(Date fechaPrimeraEntrega, int numeroEntrega){
-        int diasAgregados = numeroEntrega * ;
+    public Date calcularFechaEntrega(Date fechaPrimeraEntrega, int numeroEntrega){
+        int diasAgregados = numeroEntrega * periodicidad.getPeriodicidad();
 
-        return fechaPrimeraEntrega. ;
-    }*/
+        return this.agregarDias(fechaPrimeraEntrega, diasAgregados);
+    }
 
-    public static Date agregarDias(Date fecha, int cantidad) {
+    public static Date agregarDias(Date fecha, int dias) {
         Calendar calendario = Calendar.getInstance();
         calendario.setTime(fecha);
-        calendario.add(Calendar.DATE, cantidad);
+        calendario.add(Calendar.DATE, dias); //minus number would decrement the days
         return calendario.getTime();
     }
+
+    /* Constructor */
 
     public Pedido(Integer idPedido, Cliente cliente, Periodicidad periodicidad) {
         this.idPedido = idPedido;
