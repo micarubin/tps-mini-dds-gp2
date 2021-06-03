@@ -12,9 +12,6 @@ public class Entrega {
         articulos.add(articulo);
     }
 
-    public void envasar(){
-        //TODO envasar()
-    }
 
     /* Constructor */
 

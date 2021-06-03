@@ -5,10 +5,6 @@ import java.util.List;
 public class Planificador {
     private List<Pedido> pedidos;
 
-    public void calcularFechasDeEntrega(){
-        //TODO calcularFechasDeEntrega()
-    }
-
     public Integer cantidadPedidos(){
         return pedidos.size();
     }

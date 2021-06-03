@@ -1,13 +1,15 @@
 package domain.bussines;
 
 public enum Periodicidad {
-    UNICA_VEZ(0),
-    SEMANAL(7),
-    MENSUAL(30);
+    UNICA_VEZ(0,0),
+    SEMANAL(7,1),
+    MENSUAL(30,2);
 
     private int valorEnDias;
-    private Periodicidad(int valorEnDias){
+    private int valorMenu;
+    private Periodicidad(int valorEnDias, int valorMenu){
         this.valorEnDias = valorEnDias;
+        this.valorMenu = valorMenu;
     }
 
     public static Periodicidad fromInteger(int periodo) {

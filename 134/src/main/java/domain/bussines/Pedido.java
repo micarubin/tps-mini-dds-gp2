@@ -31,6 +31,10 @@ public class Pedido {
         this.periodicidad = periodicidad;
     }
 
+    public void agregarEntrega(Entrega entrega) {
+       this.entregas.add(entrega);
+    }
+
     /* Getters and Setters */
 
     public Integer getIdPedido() {

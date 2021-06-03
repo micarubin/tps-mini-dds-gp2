@@ -1,17 +1,14 @@
 package domain.bussines;
 
 public class Articulo {
+    private int codigo;
     private Material material;
     private Envase envase;
     private Integer cantidad;
 
     /* Constructor */
 
-    public Articulo(Material material, Envase envase, Integer cantidad) {
-        this.material = material;
-        this.envase = envase;
-        this.cantidad = cantidad;
-    }
+    public Articulo() {}
 
     /* Getters and Setters */
 
@@ -37,5 +34,9 @@ public class Articulo {
 
     public void setCantidad(Integer cantidad) {
         this.cantidad = cantidad;
+    }
+
+    public void setCodigo(int codigo) {
+        this.codigo = codigo;
     }
 }
